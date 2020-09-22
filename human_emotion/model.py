@@ -14,5 +14,4 @@ def open_result_file(file_path):
     for i in range(len(answer)):
         middle.append(answer[i][2:-2].split("'"))
         resultNLP.append((middle[i][0], int(answer[i][-2:-1])))
-
     return resultNLP

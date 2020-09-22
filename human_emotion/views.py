@@ -6,7 +6,7 @@ from random import randint
 from django.http.response import HttpResponse
 from emotionAML.modules.predict import predict
 from human_emotion.model import open_result_file
-
+from mafia.src.modules.__main__ import is_mafia, write_result
 # Create your views here.
 
 @csrf_exempt
@@ -22,14 +22,15 @@ def emotionPOST(request):
             filename = fs.save(str(randint(1000, 100000)) + uploadedFile.name, uploadedFile)  # audiofile
             file_url = str('./files/') + fs.url(filename)
 
-            resultAML = predict(file_url, 4)
-            resultNLP = open_result_file(file_url)
+            # resultAML = predict(file_url, 4)
+            # resultNLP = open_result_file(file_url)
+            resultLie = is_mafia(file_url)
 
             # return HttpResponse(resultNLP)
             return JsonResponse({
-                'emotionAML': resultAML,
-                'emotionNLP': resultNLP,
-                'mafiaLie': None
+                # 'emotionAML': resultAML,
+                # 'emotionNLP': resultNLP,
+                'mafiaLie': resultLie
                                  }, status= 200)
 
         else:

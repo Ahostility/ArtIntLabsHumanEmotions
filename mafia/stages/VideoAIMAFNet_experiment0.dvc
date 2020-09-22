@@ -1,0 +1,51 @@
+cmd: python -m src.experiments.VideoAIMAFNet.train --batch_size 10 --num_epochs 10 --lr 1e-4 --logdir VideoAIMAFNet/0 --hidden_size 256 --weight_decay 1e-5 --verbose --deterministic
+wdir: ..
+outs:
+- path: data/logs/VideoAIMAFNet/0/checkpoints/best.pth
+  cache: true
+  metric: false
+  persist: false
+  md5: 13c019cfd6a3222ad88128294d8ed3e0
+- path: data/logs/VideoAIMAFNet/0/checkpoints/best_full.pth
+  cache: true
+  metric: false
+  persist: false
+  md5: 2d625991330a3aaafd1ffbd88fd8ee50
+- path: data/logs/VideoAIMAFNet/0/checkpoints/last.pth
+  cache: true
+  metric: false
+  persist: false
+  md5: 72a60d68de9818e89d06348113b46723
+- path: data/logs/VideoAIMAFNet/0/checkpoints/last_full.pth
+  cache: true
+  metric: false
+  persist: false
+  md5: 3ae4681c18cd28840f27f167608d89be
+- path: data/logs/VideoAIMAFNet/0/_base_log
+  cache: true
+  metric: false
+  persist: false
+  md5: 101a092de6c0c3eae391170017ae9833.dir
+- path: data/logs/VideoAIMAFNet/0/train_log
+  cache: true
+  metric: false
+  persist: false
+  md5: c177252854a779fdb5a464334882b57d.dir
+- path: data/logs/VideoAIMAFNet/0/valid_log
+  cache: true
+  metric: false
+  persist: false
+  md5: f44490a87ddb79d2561b395577d93104.dir
+- path: data/logs/VideoAIMAFNet/0/log.txt
+  cache: true
+  metric: false
+  persist: false
+  md5: cda20188831d3ec76ac58f55cd5055c8
+- path: data/logs/VideoAIMAFNet/0/checkpoints/_metrics.json
+  cache: true
+  metric:
+    type: json
+    xpath: best
+  persist: false
+  md5: b9425a70a318f2f36d59afa722c541ff
+md5: f1e91b506181698d4c62ec8df5bef159

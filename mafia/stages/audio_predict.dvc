@@ -1,0 +1,10 @@
+md5: 983cc3a71274f3175b8be2da0e34ef01
+cmd: python -m src.modules.audio.sound.__main__ test.wav
+wdir: ..
+deps:
+- md5: 9fec7b40e0788762e3915136f8034cb8
+  path: data/models/audio_model.pth
+- md5: cba9a7ed7c1fcb2f33dc96905739296e
+  path: data/models/model_age.sav
+- md5: eb838ea8970bda880fe726adae7bdb74
+  path: data/models/model_gender.sav

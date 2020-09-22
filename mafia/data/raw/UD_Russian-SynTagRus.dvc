@@ -1,0 +1,7 @@
+md5: 112f3ea2b0cb3e5a65794b0bc40c341b
+outs:
+- md5: 3a5b94ed3af6be30d0bd64a48ec52da9.dir
+  path: UD_Russian-SynTagRus
+  cache: true
+  metric: false
+  persist: false

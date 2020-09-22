@@ -1,0 +1,7 @@
+md5: d64874835fbc5a1796fdb85bc5dc4596
+outs:
+- md5: a667d4ebe4583e2e1ab07325e7e62f33
+  path: BERT_model.h5
+  cache: true
+  metric: false
+  persist: false

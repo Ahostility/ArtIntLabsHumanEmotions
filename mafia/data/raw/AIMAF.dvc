@@ -1,0 +1,7 @@
+md5: 955a81527b06a395538d66dba3fb28fa
+outs:
+- md5: f6e58d4832d17949dc8707703c2105dd.dir
+  path: AIMAF
+  cache: true
+  metric: false
+  persist: false

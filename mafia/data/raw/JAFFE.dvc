@@ -1,0 +1,7 @@
+md5: 9666adfc8c39605c156f0bd6f63cb4df
+outs:
+- md5: 8e6e288ca6d9e08bab819aa881ebd3d7.dir
+  path: JAFFE
+  cache: true
+  metric: false
+  persist: false

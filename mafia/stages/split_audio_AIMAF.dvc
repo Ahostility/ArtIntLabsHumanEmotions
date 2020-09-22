@@ -1,0 +1,12 @@
+cmd: python -m src.data.AIMAF.split_media --audio --Hz 44100 --processes 4 --verbose
+wdir: ..
+deps:
+- path: data/raw/origin_markup.csv
+  md5: e34871db9b21b6787f4890be7b3a8704
+outs:
+- path: data/interhim/AIMAF/audio
+  cache: true
+  metric: false
+  persist: true
+  md5: 21b8e581be68c50099f318c75daaacc6.dir
+md5: b8599bd9a1b8ec25b7c231b4859b4f8b

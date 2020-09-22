@@ -1,0 +1,9 @@
+cmd: python -m src.data.biometry_connections.main
+wdir: ..
+outs:
+- path: data/numpy/biometry_connections.npy
+  cache: true
+  metric: false
+  persist: false
+  md5: e24bf37f78b32c93af466a370df76ff0
+md5: 1c304782baf4f32819938d9c2c90c44f

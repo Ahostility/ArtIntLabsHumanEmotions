@@ -1,0 +1,14 @@
+md5: 0168e02d31056f447a29057f57137f5d
+cmd: python -m src.experiments.Negativ.negativ
+wdir: ..
+deps:
+- md5: 8b865213e8877247bf62b72b7aaa4746
+  path: src/experiments/Negativ/negativ.py
+- md5: 40f703ed9bcc62907663088a22b1a774
+  path: data/raw/Detection_negtiv/Words_dataset.csv
+outs:
+- md5: 9fc2dc07b32b8cdbbd54d293af0bdb90
+  path: data/processed/Dataset_negativ.csv
+  cache: true
+  metric: false
+  persist: false

@@ -1,0 +1,7 @@
+md5: a61e88ccb399dfb7606230ad2526390a
+outs:
+- md5: 04063e49f965445cc5a48c6c14b2f861.dir
+  path: VCTK-Corpus
+  cache: true
+  metric: false
+  persist: false

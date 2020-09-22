@@ -1,0 +1,19 @@
+md5: b444c3beb660984886cdb25499ba672d
+cmd: python -m src.experiments.SoundMFFCParams.train --batch_size 8 --num_epochs 12
+  --logdir SoundMFCCParams/0 --hidden_size 256 --verbose --deterministic
+wdir: ..
+deps:
+- md5: 6c386506fe97d07a9ec34998ac7ba5fa.dir
+  path: data/processed/Sound_RNN_test
+- md5: 85637b624a2b7364b7944d18e0aeb7e6.dir
+  path: src/experiments/SoundMFFCParams
+- md5: b15b59cc747d04f8fdd61fd4d5f1caa0
+  path: src/experiments/args.py
+- md5: 27cda00d93353d672adbac118d1deed9
+  path: src/dirs.py
+outs:
+- md5: b777bfe794f9c50efa68fbe54033a662.dir
+  path: data/logs/SoundMFCCParams
+  cache: true
+  metric: false
+  persist: false

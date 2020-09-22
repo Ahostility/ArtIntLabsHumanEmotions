@@ -1,0 +1,55 @@
+cmd: python -m src.experiments.EmoNet.train --batch_size 90 --num_epochs 100 --logdir
+  EmoNet/1 --hidden_size 256 --sample 1 --verbose --deterministic
+wdir: ..
+deps:
+- path: data/processed/BIOMETRY
+  md5: fa803d819f7bb3012aeb781ed14a2132.dir
+outs:
+- path: data/logs/EmoNet/1/checkpoints/best.pth
+  cache: true
+  metric: false
+  persist: false
+  md5: 4aa108517c0b126d52f7c0d3fc179a09
+- path: data/logs/EmoNet/1/checkpoints/best_full.pth
+  cache: true
+  metric: false
+  persist: false
+  md5: 0459c19f1f4309ebe7619c7ce3791afd
+- path: data/logs/EmoNet/1/checkpoints/last.pth
+  cache: true
+  metric: false
+  persist: false
+  md5: 54ca7e1d09429abdbf1693102dbf02a3
+- path: data/logs/EmoNet/1/checkpoints/last_full.pth
+  cache: true
+  metric: false
+  persist: false
+  md5: 62b17767f5567ddef9a1004d10e0b252
+- path: data/logs/EmoNet/1/_base_log
+  cache: true
+  metric: false
+  persist: false
+  md5: 5efc4482be2594b6e53ff1d2868a3d92.dir
+- path: data/logs/EmoNet/1/train_log
+  cache: true
+  metric: false
+  persist: false
+  md5: 0d91ae190120e44bf88845456ffd6851.dir
+- path: data/logs/EmoNet/1/valid_log
+  cache: true
+  metric: false
+  persist: false
+  md5: 59d256a68db91f8ccbe34226982a2329.dir
+- path: data/logs/EmoNet/1/log.txt
+  cache: true
+  metric: false
+  persist: false
+  md5: ba7469be5625e8978beaaf6fa994b010
+- path: data/logs/EmoNet/1/checkpoints/_metrics.json
+  cache: true
+  metric:
+    type: json
+    xpath: best
+  persist: false
+  md5: 11cb0f06fdb98fc6b899af186b7b58d6
+md5: 5d000cd70f1cd6683608ac99f4e13cdb

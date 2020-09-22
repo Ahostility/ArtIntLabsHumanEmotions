@@ -1,0 +1,12 @@
+cmd: python -m src.data.VideoAIMAF.inference
+wdir: ..
+deps:
+- path: data/interhim/VideoAIMAF
+  md5: 57945f56a5499316985f4ff57b13a16e.dir
+outs:
+- path: data/processed/VideoAIMAF8
+  cache: true
+  metric: false
+  persist: true
+  md5: 6a6b1f07755df5bf26af04d0d308ba90.dir
+md5: e059d3803c4c78507ecd3c64d5379e1d

@@ -1,0 +1,55 @@
+cmd: python -m src.experiments.FMDepthRNN.train --batch_size 100 --num_epochs 200
+  --logdir FMDepthRNN/0 --hidden_size 136 --num_layers 1 --verbose --deterministic
+wdir: ..
+deps:
+- path: data/raw/AFLW2000
+  md5: 79eb560bfe4a03955dd0314fa443def2.dir
+outs:
+- path: data/logs/FMDepthRNN/0/checkpoints/best.pth
+  cache: true
+  metric: false
+  persist: false
+  md5: 498c4ebb927e385f646e4a395bf97966
+- path: data/logs/FMDepthRNN/0/checkpoints/best_full.pth
+  cache: true
+  metric: false
+  persist: false
+  md5: 39b34a580e48af3c0087c2d29d107ceb
+- path: data/logs/FMDepthRNN/0/checkpoints/last.pth
+  cache: true
+  metric: false
+  persist: false
+  md5: d530561386062c932d2a099a485ed2c2
+- path: data/logs/FMDepthRNN/0/checkpoints/last_full.pth
+  cache: true
+  metric: false
+  persist: false
+  md5: a3b34c6463fd2a3e41cdd14e9e9f1b2a
+- path: data/logs/FMDepthRNN/0/_base_log
+  cache: true
+  metric: false
+  persist: false
+  md5: da923d4385b33f5f0363f89f317f4338.dir
+- path: data/logs/FMDepthRNN/0/train_log
+  cache: true
+  metric: false
+  persist: false
+  md5: ce774e2edca7829d4f19e69f36a4e01e.dir
+- path: data/logs/FMDepthRNN/0/valid_log
+  cache: true
+  metric: false
+  persist: false
+  md5: 829e5893e499638ec43306ba28d8df19.dir
+- path: data/logs/FMDepthRNN/0/log.txt
+  cache: true
+  metric: false
+  persist: false
+  md5: f7bb9f1a82e101792c441334bb3f5ae4
+- path: data/logs/FMDepthRNN/0/checkpoints/_metrics.json
+  cache: true
+  metric:
+    type: json
+    xpath: best
+  persist: false
+  md5: bb19ef0550112b2db0bc6f241a7bad84
+md5: 801861f657c28a7b2119e7c8f8691806

@@ -1,0 +1,12 @@
+cmd: python -m src.data.VideoAIMAF.series
+wdir: ..
+deps:
+- path: data/interhim/AIMAF/video
+  md5: d14745d86d235c83bfe4798f752c15eb.dir
+outs:
+- path: data/interhim/VideoAIMAF
+  cache: true
+  metric: false
+  persist: true
+  md5: 57945f56a5499316985f4ff57b13a16e.dir
+md5: 6608c773ae24712dd6c4711733fff174

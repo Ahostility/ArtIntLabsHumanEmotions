@@ -1,0 +1,16 @@
+cmd: python -m src.data.BIOMETRY.main --processes 2 --stepval 5
+wdir: ..
+deps:
+- path: data/raw/CK
+  md5: eee9287052e412a39ca31034e51bd2b9.dir
+- path: data/raw/JAFFE
+  md5: 8e6e288ca6d9e08bab819aa881ebd3d7.dir
+- path: data/numpy/biometry_connections.npy
+  md5: e24bf37f78b32c93af466a370df76ff0
+outs:
+- path: data/processed/BIOMETRY
+  cache: true
+  metric: false
+  persist: false
+  md5: d51a74384b64865561da235c472caaad.dir
+md5: 8f1dd78acfaa8743c7bff8ad27201850

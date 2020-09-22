@@ -1,0 +1,7 @@
+md5: 1365b9ae205530505a9028678dfaf988
+outs:
+- md5: 9fec7b40e0788762e3915136f8034cb8
+  path: audio_model.pth
+  cache: true
+  metric: false
+  persist: false

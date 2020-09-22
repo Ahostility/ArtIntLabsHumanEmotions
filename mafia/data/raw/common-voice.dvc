@@ -1,0 +1,7 @@
+md5: c64ed1198095f2e4bcf77317b27a9a56
+outs:
+- md5: 5059035eb5e417ec3ed1391b8c938420.dir
+  path: common-voice
+  cache: true
+  metric: false
+  persist: false

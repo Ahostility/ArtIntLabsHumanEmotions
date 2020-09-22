@@ -1,0 +1,12 @@
+cmd: python -m src.data.AIMAF.split_media --video --fps 25 --processes 4 --verbose
+wdir: ..
+deps:
+- path: data/raw/origin_markup.csv
+  md5: c865f0f022e5436b3964f3a89bb1bf0c
+outs:
+- path: data/interhim/AIMAF/video
+  cache: true
+  metric: false
+  persist: true
+  md5: d14745d86d235c83bfe4798f752c15eb.dir
+md5: 480694a1945df4fd77851d8be34de8f7

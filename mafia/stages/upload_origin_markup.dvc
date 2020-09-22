@@ -1,0 +1,14 @@
+cmd: python -m src.data.markup.upload
+wdir: ..
+outs:
+- path: data/raw/origin_markup.csv
+  cache: true
+  metric: false
+  persist: false
+  md5: c865f0f022e5436b3964f3a89bb1bf0c
+- path: data/raw/web_origin_markup.csv
+  cache: true
+  metric: false
+  persist: false
+  md5: 1d42a30de1c27b9af2b602b16eea6994
+md5: a357b2a6c5426a5e72291e3938720384

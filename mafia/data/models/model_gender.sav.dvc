@@ -1,0 +1,7 @@
+md5: fd228a387aa6a061a87b7f6b60a262ad
+outs:
+- md5: eb838ea8970bda880fe726adae7bdb74
+  path: model_gender.sav
+  cache: true
+  metric: false
+  persist: false

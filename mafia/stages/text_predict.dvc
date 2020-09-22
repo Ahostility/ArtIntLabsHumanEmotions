@@ -1,0 +1,6 @@
+md5: 2566efbdd6ad45b477b5c58d27492f80
+cmd: python -m src.modules.audio.text.__main__ test.wav
+wdir: ..
+deps:
+- md5: a667d4ebe4583e2e1ab07325e7e62f33
+  path: data/models/BERT_model.h5

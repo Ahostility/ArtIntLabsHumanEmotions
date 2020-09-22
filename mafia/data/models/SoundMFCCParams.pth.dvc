@@ -1,0 +1,7 @@
+md5: dbce55faf73a5ad9b6a9f283ce217cec
+outs:
+- md5: d2ca63facb9fbe6a266651fce524af23
+  path: SoundMFCCParams.pth
+  cache: true
+  metric: false
+  persist: false
